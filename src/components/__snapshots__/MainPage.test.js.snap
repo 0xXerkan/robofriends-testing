@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render MainPage component 1`] = `
+<div
+  className="tc"
+>
+  <Header />
+  <SearchBox />
+  <CardList
+    robots={Array []}
+  />
+</div>
+`;
+
+exports[`expects to render Loading while isPending is true 1`] = `
+<h1>
+  Loading
+</h1>
+`;

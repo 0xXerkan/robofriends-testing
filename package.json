@@ -1,5 +1,10 @@
 {
   "name": "robofriends",
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "version": "0.1.0",
   "homepage": "https://0xXerkan.github.io/robofriends-testing",
   "private": true,
@@ -23,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,6 +50,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@cfaester/enzyme-adapter-react-18": "^0.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "gh-pages": "^4.0.0",
+    "nock": "^13.3.0",
+    "redux-mock-store": "^1.5.4"
   }
 }
